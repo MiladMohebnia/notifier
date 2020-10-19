@@ -1,0 +1,19 @@
+{
+  "name": "miladm/notifier",
+  "version": "1.0.0",
+  "description": "Controller for notifier service.",
+  "type": "library",
+  "license": "APACHE-2.0",
+  "authors": [
+    {
+      "name": "MiladM",
+      "email": "miladmohebnia@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "notifier\\": "src"
+    }
+  },
+  "require": {}
+}
