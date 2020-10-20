@@ -1,6 +1,6 @@
 {
   "name": "miladm/notifier",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Controller for notifier service.",
   "type": "library",
   "license": "APACHE-2.0",
