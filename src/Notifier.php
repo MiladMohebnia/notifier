@@ -19,6 +19,21 @@ class Notifier
         ]);
     }
 
+    public function unsubscribe($groupName, $userId)
+    {
+        return $this->request_post("group/unsubscribe", [
+            'groupName' => $groupName,
+            'userId' => $userId
+        ]);
+    }
+
+    public function subscribeState($groupName, $userId)
+    {
+        return $this->request_GET("group/$groupName/subscriptionCheck", [
+            'userId' => $userId
+        ])->subscription ?? false;
+    }
+
     public function user_inbox($userId)
     {
         return $this->request_get('notification/user/' . $userId . '/inbox');
